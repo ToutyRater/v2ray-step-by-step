@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>流量统计 | 新 V2Ray 白话文指南</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="V2Fly 社区维护的新手向教程。">
+    
+    <link rel="preload" href="/assets/css/0.styles.c9ca1eb1.css" as="style"><link rel="preload" href="/assets/js/app.92784e9b.js" as="script"><link rel="preload" href="/assets/js/2.501a9b57.js" as="script"><link rel="preload" href="/assets/js/34.8b21b079.js" as="script"><link rel="prefetch" href="/assets/js/10.b1dcd16a.js"><link rel="prefetch" href="/assets/js/100.a0139ed0.js"><link rel="prefetch" href="/assets/js/11.ea8ed1e8.js"><link rel="prefetch" href="/assets/js/12.58747de4.js"><link rel="prefetch" href="/assets/js/13.a998cf7d.js"><link rel="prefetch" href="/assets/js/14.03650e78.js"><link rel="prefetch" href="/assets/js/15.13a262ef.js"><link rel="prefetch" href="/assets/js/16.a3033744.js"><link rel="prefetch" href="/assets/js/17.756777e8.js"><link rel="prefetch" href="/assets/js/18.a218be8b.js"><link rel="prefetch" href="/assets/js/19.9e4d2c51.js"><link rel="prefetch" href="/assets/js/20.8bd32e55.js"><link rel="prefetch" href="/assets/js/21.92a92d49.js"><link rel="prefetch" href="/assets/js/22.4884e66f.js"><link rel="prefetch" href="/assets/js/23.1ed766b9.js"><link rel="prefetch" href="/assets/js/24.0aa23148.js"><link rel="prefetch" href="/assets/js/25.379c5b95.js"><link rel="prefetch" href="/assets/js/26.92746afb.js"><link rel="prefetch" href="/assets/js/27.fef3125b.js"><link rel="prefetch" href="/assets/js/28.370c3ea1.js"><link rel="prefetch" href="/assets/js/29.5644d75c.js"><link rel="prefetch" href="/assets/js/3.10a89bd1.js"><link rel="prefetch" href="/assets/js/30.7376c723.js"><link rel="prefetch" href="/assets/js/31.c00477d3.js"><link rel="prefetch" href="/assets/js/32.53f8db12.js"><link rel="prefetch" href="/assets/js/33.0bbb0e36.js"><link rel="prefetch" href="/assets/js/35.dae28a83.js"><link rel="prefetch" href="/assets/js/36.30eca478.js"><link rel="prefetch" href="/assets/js/37.b549ed66.js"><link rel="prefetch" href="/assets/js/38.33b65bdd.js"><link rel="prefetch" href="/assets/js/39.eda3c3e3.js"><link rel="prefetch" href="/assets/js/4.72661812.js"><link rel="prefetch" href="/assets/js/40.0ed270e0.js"><link rel="prefetch" href="/assets/js/41.3c0f25d2.js"><link rel="prefetch" href="/assets/js/42.14d6dab9.js"><link rel="prefetch" href="/assets/js/43.c26c7b8b.js"><link rel="prefetch" href="/assets/js/44.9bc299fb.js"><link rel="prefetch" href="/assets/js/45.2d5deaad.js"><link rel="prefetch" href="/assets/js/46.0e7e73e9.js"><link rel="prefetch" href="/assets/js/47.409528c2.js"><link rel="prefetch" href="/assets/js/48.f71df375.js"><link rel="prefetch" href="/assets/js/49.37aa2cd2.js"><link rel="prefetch" href="/assets/js/5.3bb71701.js"><link rel="prefetch" href="/assets/js/50.5986faa0.js"><link rel="prefetch" href="/assets/js/51.bb54c812.js"><link rel="prefetch" href="/assets/js/52.98a5f7d7.js"><link rel="prefetch" href="/assets/js/53.af38663e.js"><link rel="prefetch" href="/assets/js/54.16875d0e.js"><link rel="prefetch" href="/assets/js/55.7a1beb45.js"><link rel="prefetch" href="/assets/js/56.438404d9.js"><link rel="prefetch" href="/assets/js/57.b7c21283.js"><link rel="prefetch" href="/assets/js/58.423da439.js"><link rel="prefetch" href="/assets/js/59.24ea6870.js"><link rel="prefetch" href="/assets/js/6.95e26aa0.js"><link rel="prefetch" href="/assets/js/60.41565760.js"><link rel="prefetch" href="/assets/js/61.9bbdfd16.js"><link rel="prefetch" href="/assets/js/62.6d31cfda.js"><link rel="prefetch" href="/assets/js/63.e515a0f2.js"><link rel="prefetch" href="/assets/js/64.c51a0d0c.js"><link rel="prefetch" href="/assets/js/65.7d67b756.js"><link rel="prefetch" href="/assets/js/66.440e7297.js"><link rel="prefetch" href="/assets/js/67.6f42cdd7.js"><link rel="prefetch" href="/assets/js/68.706103eb.js"><link rel="prefetch" href="/assets/js/69.2ab76646.js"><link rel="prefetch" href="/assets/js/7.13ff74d2.js"><link rel="prefetch" href="/assets/js/70.f08c8eb6.js"><link rel="prefetch" href="/assets/js/71.dc673278.js"><link rel="prefetch" href="/assets/js/72.33b490bd.js"><link rel="prefetch" href="/assets/js/73.9b9f6231.js"><link rel="prefetch" href="/assets/js/74.5c516b62.js"><link rel="prefetch" href="/assets/js/75.6bc3699b.js"><link rel="prefetch" href="/assets/js/76.f962677d.js"><link rel="prefetch" href="/assets/js/77.7f31f049.js"><link rel="prefetch" href="/assets/js/78.cce4d211.js"><link rel="prefetch" href="/assets/js/79.6d899c25.js"><link rel="prefetch" href="/assets/js/8.81551fbd.js"><link rel="prefetch" href="/assets/js/80.f823bcd8.js"><link rel="prefetch" href="/assets/js/81.101193e9.js"><link rel="prefetch" href="/assets/js/82.5a95ad0a.js"><link rel="prefetch" href="/assets/js/83.bb4ff0b3.js"><link rel="prefetch" href="/assets/js/84.76dd5ef2.js"><link rel="prefetch" href="/assets/js/85.65a60df5.js"><link rel="prefetch" href="/assets/js/86.601e9a89.js"><link rel="prefetch" href="/assets/js/87.bdd0e505.js"><link rel="prefetch" href="/assets/js/88.e4d11b57.js"><link rel="prefetch" href="/assets/js/89.039fd25d.js"><link rel="prefetch" href="/assets/js/9.73567f7a.js"><link rel="prefetch" href="/assets/js/90.f61b389f.js"><link rel="prefetch" href="/assets/js/91.c9a9109e.js"><link rel="prefetch" href="/assets/js/92.b5416097.js"><link rel="prefetch" href="/assets/js/93.37759b6c.js"><link rel="prefetch" href="/assets/js/94.8d034260.js"><link rel="prefetch" href="/assets/js/95.1f4d43eb.js"><link rel="prefetch" href="/assets/js/96.01953efb.js"><link rel="prefetch" href="/assets/js/97.36c00069.js"><link rel="prefetch" href="/assets/js/98.b6261066.js"><link rel="prefetch" href="/assets/js/99.9a5edbe7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c9ca1eb1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">新 V2Ray 白话文指南</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://v2fly.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  官方手册
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/advanced/traffic.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  zh-CN
+</a></li><li class="dropdown-item"><!----> <a href="/en_US/advanced/traffic.html" class="nav-link">
+  en-US
+</a></li></ul></div></div> <a href="https://github.com/v2fly/v2ray-step-by-step" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://v2fly.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  官方手册
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/advanced/traffic.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  zh-CN
+</a></li><li class="dropdown-item"><!----> <a href="/en_US/advanced/traffic.html" class="nav-link">
+  en-US
+</a></li></ul></div></div> <a href="https://github.com/v2fly/v2ray-step-by-step" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>前言</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/" aria-current="page" class="sidebar-link">V2Ray 配置指南</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/prep/prep" class="sidebar-heading clickable"><span>开篇</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/basics/basics" class="sidebar-heading clickable"><span>基本篇</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/advanced/advanced" class="sidebar-heading clickable open"><span>高级篇</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/advanced/mux.html" class="sidebar-link">Mux</a></li><li><a href="/advanced/mkcp.html" class="sidebar-link">mKCP</a></li><li><a href="/advanced/dynamicport.html" class="sidebar-link">动态端口</a></li><li><a href="/advanced/outboundproxy.html" class="sidebar-link">代理转发</a></li><li><a href="/advanced/httpfake.html" class="sidebar-link">HTTP 伪装</a></li><li><a href="/advanced/tls.html" class="sidebar-link">TLS</a></li><li><a href="/advanced/tcp_tls_web.html" class="sidebar-link">TCP + TLS + Web</a></li><li><a href="/advanced/tcp_tls_shunt_proxy.html" class="sidebar-link">TCP + TLS 分流器</a></li><li><a href="/advanced/websocket.html" class="sidebar-link">WebSocket</a></li><li><a href="/advanced/wss_and_web.html" class="sidebar-link">WebSocket + TLS + Web</a></li><li><a href="/advanced/h2.html" class="sidebar-link">HTTP/2</a></li><li><a href="/advanced/h2_tls_web.html" class="sidebar-link">HTTP/2+TLS+WEB</a></li><li><a href="/advanced/tls_routing_with_nginx.html" class="sidebar-link">基于 Nginx 的简单 TLS 分流</a></li><li><a href="/advanced/cdn.html" class="sidebar-link">CDN</a></li><li><a href="/advanced/traffic.html" aria-current="page" class="active sidebar-link">流量统计</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/advanced/traffic.html#配置统计功能" class="sidebar-link">配置统计功能</a></li><li class="sidebar-sub-header"><a href="/advanced/traffic.html#配置实例" class="sidebar-link">配置实例</a></li><li class="sidebar-sub-header"><a href="/advanced/traffic.html#查看流量信息" class="sidebar-link">查看流量信息</a></li><li class="sidebar-sub-header"><a href="/advanced/traffic.html#流量信息的处理" class="sidebar-link">流量信息的处理</a></li></ul></li><li><a href="/advanced/tor.html" class="sidebar-link">Tor</a></li><li><a href="/advanced/not_recommend.html" class="sidebar-link">不推荐的配置</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/app/app" class="sidebar-heading clickable"><span>应用篇</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/routing/routing" class="sidebar-heading clickable"><span>路由</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="流量统计"><a href="#流量统计" class="header-anchor">#</a> 流量统计</h1> <p>V2Ray 内包含了流量记录器功能，但是默认并不启用。流量统计分三类：<code>inbound</code>，<code>user</code>和<code>outbound</code>（4.26.0+）。</p> <ul><li><code>inbound</code> 即配置内各个 inbound 的入站的统计，需要根据 <code>tag</code> 来记录入站流量。</li> <li><code>user</code> 即 vmess 协议用户里面的统计，用户的 <code>email</code> 既是统计和区分的依据。socks, shadowsocks, http 等其他协议内的用户不支持被统计。</li> <li>从 4.26.0+ 起新增 <code>outbound</code> ，即配置内各个 outbound 的出站的统计，需要根据 <code>tag</code> 来记录出站流量。</li></ul> <h2 id="配置统计功能"><a href="#配置统计功能" class="header-anchor">#</a> 配置统计功能</h2> <p>要实现流量统计功能，配置内需要确保存在以下配置：</p> <ol><li><code>&quot;stats&quot;:{}</code> 对象的存在</li> <li><code>&quot;policy&quot;</code> 中的统计开关为 true。全局统计的开关在 <code>&quot;system&quot;</code> 下，用户统计的开关在 <code>&quot;levels&quot;</code> 下</li> <li>全局统计在相应的入站出站要有 tag</li> <li>用户统计在 <code>&quot;clients&quot;</code> 里面要有 email</li></ol> <p>要使用 api 查询流量，配置内需要确保存在以下配置：</p> <ol><li><code>&quot;api&quot;</code> 配置对象里面有 <code>StatsService</code></li> <li>专用的 <code>dokodemo-door</code> 协议的入口，tag 为 api</li> <li>routing 里面有 inboundTag:api -&gt; outboundTag:api 的规则</li></ol> <p>注意： 统计的 <code>email</code>/<code>tag</code> 是当前的 V2Ray 进程实例的数据，比如在服务器上统计，客户端写的 email 对服务器没有意义；如果在客户端统计，输出的就是客户端本身的数据。</p> <h2 id="配置实例"><a href="#配置实例" class="header-anchor">#</a> 配置实例</h2> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;stats&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;api&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;tag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;api&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;services&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;StatsService&quot;</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;policy&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;levels&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;0&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;statsUserUplink&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;statsUserDownlink&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;system&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;statsInboundUplink&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;statsInboundDownlink&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;statsOutboundUplink&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;statsOutboundDownlink&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;inbounds&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;tag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tcp&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token number">3307</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;protocol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vmess&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;clients&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;auser&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;e731f153-4f31-49d3-9e8f-ff8f396135ef&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;level&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;alterId&quot;</span><span class="token operator">:</span> <span class="token number">64</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;buser&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;e731f153-4f31-49d3-9e8f-ff8f396135ee&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;level&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;alterId&quot;</span><span class="token operator">:</span> <span class="token number">64</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;listen&quot;</span><span class="token operator">:</span> <span class="token string">&quot;127.0.0.1&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token number">10085</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;protocol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dokodemo-door&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;127.0.0.1&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;api&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;outbounds&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;tag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;direct&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;protocol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;freedom&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;routing&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;inboundTag&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token string">&quot;api&quot;</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;outboundTag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;api&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;field&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;strategy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rules&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="查看流量信息"><a href="#查看流量信息" class="header-anchor">#</a> 查看流量信息</h2> <p>查看流量信息是 <code>v2ctl</code> 的其中一个功能。使用 <code>v2ctl api -h</code> 可见查询例子。 配置内设置的 api dokodemo-door 端口，即为 <code>--server</code> 参数的端口。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>v2ctl api --server<span class="token operator">=</span><span class="token number">127.0</span>.0.1:10085 StatsService.QueryStats <span class="token string">'pattern: &quot;&quot; reset: false'</span>
+v2ctl api --server<span class="token operator">=</span><span class="token number">127.0</span>.0.1:10085 StatsService.GetStats <span class="token string">'name: &quot;inbound&gt;&gt;&gt;statin&gt;&gt;&gt;traffic&gt;&gt;&gt;downlink&quot; reset: false'</span>
+</code></pre></div><p>注意如果在 Windows 的 CMD 内运行，里面的引号要特别处理：</p> <div class="language-cmd extra-class"><pre class="language-text"><code>v2ctl.exe api --server=&quot;127.0.0.1:10085&quot; StatsService.GetStats &quot;name: &quot;&quot;&quot;&quot;inbound&gt;&gt;&gt;statin&gt;&gt;&gt;traffic&gt;&gt;&gt;downlink&quot;&quot;&quot;&quot; reset: false&quot;
+</code></pre></div><p>可调用的 api 有两个：</p> <ul><li><code>QueryStats</code>用来查询匹配的记录，可以使用参数<code>pattern</code>和<code>reset</code>；pattern 留空则是匹配所有记录；reset 使匹配的单元数值置零。</li> <li><code>GetStats</code>用来其中一个的记录，接受<code>name</code>和<code>reset</code>，name 可参考 QueryStats 的输出结果构建，reset 使该单元数值置零。</li></ul> <p>输出例子：</p> <div class="language-text extra-class"><pre class="language-text"><code>$ /usr/bin/v2ray/v2ctl api --server=127.0.0.1:10085 StatsService.GetStats 'name:&quot;inbound&gt;&gt;&gt;ws&gt;&gt;&gt;traffic&gt;&gt;&gt;uplink&quot;'
+stat: &lt;
+  name: &quot;inbound&gt;&gt;&gt;ws&gt;&gt;&gt;traffic&gt;&gt;&gt;uplink&quot;
+  value: 3350713
+&gt;
+$
+$
+$ /usr/bin/v2ray/v2ctl api --server=127.0.0.1:10085 StatsService.QueryStats ''
+stat: &lt;
+  name: &quot;inbound&gt;&gt;&gt;ws&gt;&gt;&gt;traffic&gt;&gt;&gt;uplink&quot;
+  value: 3350713
+&gt;
+stat: &lt;
+  name: &quot;inbound&gt;&gt;&gt;ss&gt;&gt;&gt;traffic&gt;&gt;&gt;downlink&quot;
+  value: 1704
+&gt;
+stat: &lt;
+  name: &quot;user&gt;&gt;&gt;u3@ws&gt;&gt;&gt;traffic&gt;&gt;&gt;uplink&quot;
+  value: 2810759
+&gt;
+stat: &lt;
+  name: &quot;user&gt;&gt;&gt;u9@ss&gt;&gt;&gt;traffic&gt;&gt;&gt;uplink&quot;
+  value: 1776
+&gt;
+stat: &lt;
+  name: &quot;inbound&gt;&gt;&gt;ss&gt;&gt;&gt;traffic&gt;&gt;&gt;uplink&quot;
+  value: 2276
+&gt;
+stat: &lt;
+  name: &quot;inbound&gt;&gt;&gt;api&gt;&gt;&gt;traffic&gt;&gt;&gt;uplink&quot;
+  value: 318
+&gt;
+stat: &lt;
+  name: &quot;user&gt;&gt;&gt;u9@ss&gt;&gt;&gt;traffic&gt;&gt;&gt;downlink&quot;
+  value: 1368
+&gt;
+stat: &lt;
+  name: &quot;inbound&gt;&gt;&gt;tcp&gt;&gt;&gt;traffic&gt;&gt;&gt;uplink&quot;
+&gt;
+stat: &lt;
+  name: &quot;inbound&gt;&gt;&gt;tcp&gt;&gt;&gt;traffic&gt;&gt;&gt;downlink&quot;
+&gt;
+stat: &lt;
+  name: &quot;inbound&gt;&gt;&gt;ws&gt;&gt;&gt;traffic&gt;&gt;&gt;downlink&quot;
+  value: 130637140
+&gt;
+stat: &lt;
+  name: &quot;inbound&gt;&gt;&gt;api&gt;&gt;&gt;traffic&gt;&gt;&gt;downlink&quot;
+  value: 759
+&gt;
+stat: &lt;
+  name: &quot;user&gt;&gt;&gt;u3@ws&gt;&gt;&gt;traffic&gt;&gt;&gt;downlink&quot;
+  value: 126944108
+&gt;
+</code></pre></div><p>结果中的 <code>name</code> 可作为 <code>GetStats</code> API 查询单个计数单元的值，name 的组成规律请自行概括，这里不再详谈；value 的计数单位是字节。</p> <h2 id="流量信息的处理"><a href="#流量信息的处理" class="header-anchor">#</a> 流量信息的处理</h2> <p>上述配置是让 v2ray 打开一个 <code>grpc</code> 协议的查询接口，除了使用 v2ctl ，可以用各种支持 grpc 协议的程序查询上述数值并另外处理（如入库统计、用户计费、图表报告）。不过，本文不会深入探讨。既然有 <code>v2ctl</code> 现成的命令行程序，我们可以用简单的 shell 脚本 awk 工具来处理，生成足够可读的报表。</p> <p>尝试把以下脚本保存到 <code>traffic.sh</code>，注意使用 <code>chmod 755 traffic.sh</code> 授予执行权限。注意调整修改 <code>_APISERVER</code> 一行的连接具体的端口参数。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token shebang important">#!/bin/bash</span>
+
+<span class="token assign-left variable">_APISERVER</span><span class="token operator">=</span><span class="token number">127.0</span>.0.1:10085
+<span class="token assign-left variable">_V2CTL</span><span class="token operator">=</span>/usr/bin/v2ray/v2ctl
+
+<span class="token function-name function">apidata</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin class-name">local</span> <span class="token assign-left variable">ARGS</span><span class="token operator">=</span>
+    <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$1</span> <span class="token operator">==</span> <span class="token string">&quot;reset&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+      <span class="token assign-left variable">ARGS</span><span class="token operator">=</span><span class="token string">&quot;reset: true&quot;</span>
+    <span class="token keyword">fi</span>
+    <span class="token variable">$_V2CTL</span> api --server<span class="token operator">=</span><span class="token variable">$_APISERVER</span> StatsService.QueryStats <span class="token string">&quot;<span class="token variable">${ARGS}</span>&quot;</span> <span class="token punctuation">\</span>
+    <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{
+        if (match(<span class="token variable">$1</span>, /name:/)) {
+            f=1; gsub(/^&quot;|link&quot;$/, &quot;&quot;, <span class="token variable">$2</span>);
+            split(<span class="token variable">$2</span>, p,  &quot;&gt;&gt;&gt;&quot;);
+            printf &quot;%s:%s-&gt;%s<span class="token entity" title="\t">\t</span>&quot;, p[1],p[2],p[4];
+        }
+        else if (match(<span class="token variable">$1</span>, /value:/) &amp;&amp; f){ f = 0; printf &quot;%.0f<span class="token entity" title="\n">\n</span>&quot;, <span class="token variable">$2</span>; }
+        else if (match(<span class="token variable">$0</span>, /^&gt;$/) &amp;&amp; f) { f = 0; print 0; }
+    }'</span>
+<span class="token punctuation">}</span>
+
+<span class="token function-name function">print_sum</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin class-name">local</span> <span class="token assign-left variable">DATA</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">$1</span>&quot;</span>
+    <span class="token builtin class-name">local</span> <span class="token assign-left variable">PREFIX</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">$2</span>&quot;</span>
+    <span class="token builtin class-name">local</span> <span class="token assign-left variable">SORTED</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">&quot;<span class="token variable">$DATA</span>&quot;</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&quot;^<span class="token variable">${PREFIX}</span>&quot;</span> <span class="token operator">|</span> <span class="token function">sort</span> -r<span class="token variable">)</span></span>
+    <span class="token builtin class-name">local</span> <span class="token assign-left variable">SUM</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">&quot;<span class="token variable">$SORTED</span>&quot;</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'
+        /-&gt;up/{us+=<span class="token variable">$2</span>}
+        /-&gt;down/{ds+=<span class="token variable">$2</span>}
+        END{
+            printf &quot;SUM-&gt;up:<span class="token entity" title="\t">\t</span>%.0f<span class="token entity" title="\n">\n</span>SUM-&gt;down:<span class="token entity" title="\t">\t</span>%.0f<span class="token entity" title="\n">\n</span>SUM-&gt;TOTAL:<span class="token entity" title="\t">\t</span>%.0f<span class="token entity" title="\n">\n</span>&quot;, us, ds, us+ds;
+        }'</span><span class="token variable">)</span></span>
+    <span class="token builtin class-name">echo</span> -e <span class="token string">&quot;<span class="token variable">${SORTED}</span><span class="token entity" title="\n">\n</span><span class="token variable">${SUM}</span>&quot;</span> <span class="token punctuation">\</span>
+    <span class="token operator">|</span> numfmt --field<span class="token operator">=</span><span class="token number">2</span> --suffix<span class="token operator">=</span>B --to<span class="token operator">=</span>iec <span class="token punctuation">\</span>
+    <span class="token operator">|</span> <span class="token function">column</span> -t
+<span class="token punctuation">}</span>
+
+<span class="token assign-left variable">DATA</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>apidata $1<span class="token variable">)</span></span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;------------Inbound----------&quot;</span>
+print_sum <span class="token string">&quot;<span class="token variable">$DATA</span>&quot;</span> <span class="token string">&quot;inbound&quot;</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;-----------------------------&quot;</span>
+<span class="token builtin class-name">echo</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;-------------User------------&quot;</span>
+print_sum <span class="token string">&quot;<span class="token variable">$DATA</span>&quot;</span> <span class="token string">&quot;user&quot;</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;-----------------------------&quot;</span>
+</code></pre></div><p>运行效果：</p> <div class="language-text extra-class"><pre class="language-text"><code>$ ./traffic.sh
+------------Inbound----------
+inbound:ws-&gt;up      0B
+inbound:ws-&gt;down    0B
+inbound:tcp-&gt;up     47B
+inbound:tcp-&gt;down   0B
+inbound:kcp-&gt;up     259MB
+inbound:kcp-&gt;down   2.4GB
+inbound:api-&gt;up     2.0KB
+inbound:api-&gt;down   6.6KB
+SUM-&gt;up:            259MB
+SUM-&gt;down:          2.4GB
+SUM-&gt;TOTAL:         2.6GB
+-----------------------------
+
+-------------User------------
+user:me@kcp-&gt;up    240MB
+user:me@kcp-&gt;down  2.3GB
+SUM-&gt;up:           240MB
+SUM-&gt;down:         2.3GB
+SUM-&gt;TOTAL:        2.5GB
+-----------------------------
+</code></pre></div><p>脚本使用 <code>reset</code> 参数让调用的计数单元置零，配合 watch 命令，即可查看流经 v2ray 的每秒实时流量速度：
+<code>watch ./traffic.sh reset</code></p> <h4 id="更新历史"><a href="#更新历史" class="header-anchor">#</a> 更新历史</h4> <ul><li>2019-08-07 统计脚本识别科学计数法的输出情况</li> <li>2019-08-09 优化流量脚本，增加了 SUM-&gt;TOTAL 的累加项</li> <li>2020-07-04 增加了 outbound 的流量统计</li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/v2fly/v2ray-step-by-step/edit/transifex/zh_CN/advanced/traffic.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">5/27/2020, 7:40:13 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/advanced/cdn.html" class="prev">
+        CDN
+      </a></span> <span class="next"><a href="/advanced/tor.html">
+        Tor
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.92784e9b.js" defer></script><script src="/assets/js/2.501a9b57.js" defer></script><script src="/assets/js/34.8b21b079.js" defer></script>
+  </body>
+</html>
